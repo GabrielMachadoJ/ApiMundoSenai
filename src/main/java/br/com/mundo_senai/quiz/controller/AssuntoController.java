@@ -13,7 +13,7 @@ public class AssuntoController {
   @Autowired
   private AssuntoSerivce as;
 
-  @GetMapping("/assuntos")
+  @GetMapping("/assunto/listar")
   public Iterable<AssuntoModel> listar(){
     return as.listar();
   }

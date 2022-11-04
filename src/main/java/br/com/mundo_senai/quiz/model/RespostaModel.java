@@ -10,16 +10,17 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "perguntas")
+@Table(name = "respostas")
 @Getter
 @Setter
-public class PerguntaModel {
+public class RespostaModel {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long codigo;
-  private String pergunta;
-  private int resposta;
-  private int assunto;
+  private String resposta;
 
+
+  private int idPergunta;
+  private String alternativaCorreta; //Recebe "Correta" ou "Errada"
 }

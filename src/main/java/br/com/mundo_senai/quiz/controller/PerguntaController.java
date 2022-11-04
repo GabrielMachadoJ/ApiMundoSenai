@@ -13,14 +13,9 @@ public class PerguntaController {
   @Autowired
   private PerguntaService ps;
 
-  @GetMapping("/listar")
+  @GetMapping("/pergunta/listar")
   public Iterable<PerguntaModel> listar(){
     return ps.listar();
-  }
-
-  @GetMapping("/perguntas")
-  public String route() {
-    return "Rota de pergunta funcionando";
   }
   
 }
