@@ -18,12 +18,8 @@ public class PerguntaModel {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-  private String pergunta;
-
-  private int resposta;
-
-
   private int assunto;
+  private String pergunta;
 
 }
 

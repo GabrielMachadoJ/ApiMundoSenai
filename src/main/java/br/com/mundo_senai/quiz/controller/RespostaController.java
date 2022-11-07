@@ -5,19 +5,19 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.mundo_senai.quiz.model.PerguntaModel;
-import br.com.mundo_senai.quiz.service.PerguntaService;
+import br.com.mundo_senai.quiz.model.RespostaModel;
+import br.com.mundo_senai.quiz.service.RespostaService;
 
 @RestController
 @CrossOrigin(origins = "*")
-public class PerguntaController {
+public class RespostaController {
 
   @Autowired
-  private PerguntaService ps;
+  private RespostaService rs;
 
-  @GetMapping("/pergunta/listar")
-  public Iterable<PerguntaModel> listar(){
-    return ps.listar();
+  @GetMapping("/resposta/listar")
+  public Iterable<RespostaModel> listar(){
+    return rs.listar();
   }
   
 }
